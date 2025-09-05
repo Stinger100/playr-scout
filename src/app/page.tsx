@@ -10,11 +10,10 @@ export default function HomePage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/brand/hero-scout.jpg"
+            src="/brand/hero-scout.png"
             alt="Scouting on the pitch"
             fill
             priority
-            className="object-cover"
             sizes="100vw"
           />
           <div className="absolute inset-0 bg-white/60" />
@@ -67,7 +66,7 @@ export default function HomePage() {
             },
           ].map((f) => (
             <article key={f.title} className="rounded-2xl border bg-white p-6 shadow-sm">
-              <h3 className="font-medium">{f.title}</h3>
+              <h3 className="font-medium text-black">{f.title}</h3>
               <p className="mt-2 text-sm text-gray-600">{f.desc}</p>
             </article>
           ))}

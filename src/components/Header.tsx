@@ -3,17 +3,17 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-20 backdrop-blur bg-white/70 border-b">
+    <header className="sticky top-0 z-20 bg-white border-b">
       <div className="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
-          <Image
-            src="/brand/playr-logo.png"
-            alt="Playr"
-            width={56}
-            height={56}
-            priority
-            className="rounded-full"
-          />
+        <Image
+          src="/brand/playr-logo.png"
+          alt="Playr"
+          width={86}
+          height={56}
+          priority
+          className="w-auto h-auto rounded-full"
+      />
         </Link>
 
         <nav className="hidden md:flex items-center gap-6 text-sm text-gray-600">
