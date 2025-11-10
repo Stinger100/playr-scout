@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* Design tokens */
+@theme {
+    --color-primary: #34D399;
+    /* Vibrant Green  → bg-primary, text-primary */
+    --color-secondary: #111827;
+    /* Dark Charcoal → bg-secondary, text-secondary */
+    --color-tertiary: #F9FAFB;
+    /* Off-White     → bg-tertiary, text-tertiary */
+
+    --color-background-light: #F9FAFB;
+    --color-background-dark: #101622;
+
+    --font-display: "Lexend", sans-serif;
+    /* use via font-display */
+}
+
+/* Dark mode tokens (still use `.dark` on <html> or <body>) */
+@theme .dark {
+    --color-background-light: var(--color-background-dark);
+    --color-tertiary: #0b1020;
+    /* optional tweak for dark backgrounds */
+}
+
+/* (optional) little helpers mapped to your tokens */
+.bg-background-light {
+    background: var(--color-background-light);
+}
+
+.bg-background-dark {
+    background: var(--color-background-dark);
+}
